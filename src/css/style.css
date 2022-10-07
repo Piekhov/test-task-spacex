@@ -1,0 +1,93 @@
+.container__grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-auto-rows: auto;
+    grid-auto-columns: auto;
+    grid-template-areas: "hd hd" "nav nav " "article section";
+    margin: 0;
+    padding: 0;
+  }
+.header {
+    display: flex;
+    grid-area: hd;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    width: 100vw;   
+    background-color: #212529;
+    padding-right: 32px;
+}
+.header__avatar {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.header__h1 {
+    margin-left: 48px;
+}
+.navbarMenu {
+    grid-area: nav;
+    width: 100vw;
+    padding: 0;
+}
+
+.сarouselElement__infoContainer {
+    margin-top: 16px;
+    grid-area: article;
+    width:30vw;
+    padding-left: 16px;
+    padding-right: 16px;
+    height: auto;
+    border-right: 2px solid #aab3bb;
+
+}
+.carouselElement__box {
+    display: flex;
+    grid-area: section;
+    width: 70vw;
+}
+.carouselElement {
+    margin-top: 16px;
+    grid-area: section;
+    display: flex;
+    width: 70vw;
+}
+.carouselElement__container {
+    width: 100%;
+    height: 500px;
+    display: block;
+   
+}
+.carouselElement__img {
+    width: 100%;
+    height: 500px;
+    display: block;
+}
+.container-fluid {
+    margin-left: 8px;
+    padding: 0;
+}
+
+.carouselImages__img {
+    width: 100vw;
+    height: 80vh;
+    margin-top: 16px;
+    display: block;
+   
+}
+
+
+@media only screen and (max-width: 768px) {
+    .container__grid {
+        display: block;
+    }
+    .сarouselElement__infoContainer {
+        width:100vw;
+    }
+    .carouselElement {
+        width: 100vw;
+    }
+}
