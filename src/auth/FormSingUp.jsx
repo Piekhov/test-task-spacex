@@ -14,7 +14,6 @@ const EmailSignUp = (email, password) => {
   .then((userCredential) => {
       
     const user = userCredential.user;
-    console.log(user);
     const email = userCredential.email;
     const password = userCredential.password;
       
@@ -26,9 +25,7 @@ const EmailSignUp = (email, password) => {
 }
 
   const [email, setEmail] = useState("");
-  console.log(email);
   const [password, setPassword] = useState("");
-  console.log(password);
  
   return (
     <Modal

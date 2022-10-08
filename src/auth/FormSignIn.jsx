@@ -25,9 +25,7 @@ function FormSingIn({handleClick}) {
 
 function MyVerticallyCenteredModal(props) {
   const [email, setEmail] = useState("");
-  console.log(email);
   const [password, setPassword] = useState("");
-  console.log(password);
   return (
     <Modal
       {...props}

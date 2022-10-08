@@ -11,7 +11,6 @@ function SingUp() {
         .then((userCredential) => {
             
           const user = userCredential.user;
-          console.log(user);
           const email = userCredential.email;
           const password = userCredential.password;
             

@@ -24,7 +24,7 @@ function App() {
       <Header/>
       <NavbarMenu/>
       <Routes>
-        {/* <Route path="/" element={<CarouselImages/>}/> */}
+        <Route path="/" element={<CarouselImages/>}/>
         <Route path="/login" element={<SingIn/>}/>
         <Route path="/register" element={<SingUp/>}/>
         <Route path="/dragons/:id" element={<CarouselElement/>}/>
@@ -35,5 +35,3 @@ function App() {
 }
 
 export default App;
-
-{/* <img src={logo} className="App-logo" alt="logo" /> */}
