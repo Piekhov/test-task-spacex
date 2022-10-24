@@ -7,6 +7,7 @@ import CarouselElement from './components/CarouselElement';
 import CarouselImages from './components/CarouselImages';
 import Header from './components/Header';
 import NavbarMenu from './components/NavbarMenu';
+import StartPage from './components/StartPage';
 import { fetchDragons } from './store/dragonSlice';
 
 
@@ -24,7 +25,8 @@ function App() {
       <Header/>
       <NavbarMenu/>
       <Routes>
-        <Route path="/" element={<CarouselImages/>}/>
+        <Route path="/" element={<StartPage/>}/>
+        {/* <Route path="/" element={<CarouselImages/>}/> */}
         <Route path="/login" element={<SingIn/>}/>
         <Route path="/register" element={<SingUp/>}/>
         <Route path="/dragons/:id" element={<CarouselElement/>}/>

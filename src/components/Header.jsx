@@ -16,7 +16,9 @@ function Header() {
 
   return (
     <header className="header">
+      <Link to='/'>
       <h1 className="header__h1">spaseX DRAGON</h1>
+      </Link> 
       {user && user.displayName !== null ? (
         <section>
           <Dropdown>
